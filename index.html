@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VITRA — Software & Cyber Security Studio</title>
+<meta name="description" content="VITRA is a software and cyber security studio: full applications, websites and mobile games engineered on one side, offensive-grade security testing on the other." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="vitra-loader" aria-hidden="true">
+  <div class="loader-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="loader-cursor"></span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="brand" aria-label="VITRA home">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="cursor-dot"></span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="is-active" data-i18n="nav_home">Home</a>
+        <a href="programming.html" data-i18n="nav_programming">Programming</a>
+        <a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <span class="credit-tag" data-i18n="credit">By: Ebrahim Hossam</span>
+      <div class="lang-switch">
+        <button class="lang-trigger" aria-haspopup="true" aria-expanded="false">
+          <span data-current-lang>EN</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="es">Español</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile">
+    <a href="index.html" class="is-active" data-i18n="nav_home">Home</a>
+    <a href="programming.html" data-i18n="nav_programming">Programming</a>
+    <a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a>
+    <a href="about.html" data-i18n="nav_about">About</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+  </nav>
+</header>
+<div class="menu-scrim"></div>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <canvas id="circuit-canvas"></canvas>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow" data-i18n="hero_eyebrow">Software & Security Studio</span>
+        <h1 class="hero__title">
+          <span data-i18n="hero_title_1">We build the systems</span><br>
+          <span data-i18n="hero_title_2">and guard the ones you own.</span>
+        </h1>
+        <p class="hero__sub" data-i18n="hero_sub">VITRA is a two-discipline studio: clean, scalable software on one side, offensive-grade security testing on the other. One team, one standard of craft.</p>
+        <div class="hero__actions">
+          <a href="programming.html" class="btn btn-primary" data-i18n="hero_cta_primary">View Programming Work</a>
+          <a href="cybersecurity.html" class="btn btn-secondary" data-i18n="hero_cta_secondary">View Security Work</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span data-i18n="hero_scroll">Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-card reveal">
+          <div class="stat-card__num"><span data-count="120" data-suffix="+">0+</span></div>
+          <div class="stat-card__label" data-i18n="stats_projects">Projects Shipped</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-card__num"><span data-count="60" data-suffix="+">0+</span></div>
+          <div class="stat-card__label" data-i18n="stats_audits">Security Audits</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-card__num"><span data-count="9" data-suffix="+">0+</span></div>
+          <div class="stat-card__label" data-i18n="stats_years">Years Combined Experience</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-card__num"><span data-count="98" data-suffix="%">0%</span></div>
+          <div class="stat-card__label" data-i18n="stats_uptime">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services preview -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services_eyebrow">What We Do</span>
+        <h2 data-i18n="services_title">Two disciplines. One studio.</h2>
+        <p data-i18n="services_sub">Every engagement is handled end-to-end — from first architecture sketch to final handover, or from first scan to final report.</p>
+      </div>
+      <div class="discipline-grid">
+        <a href="programming.html" class="discipline-card reveal">
+          <div class="discipline-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 data-i18n="services_prog_title">Programming</h3>
+          <p data-i18n="services_prog_desc">Full applications, websites, mobile games and embedded tools, engineered to scale.</p>
+          <span class="discipline-card__link">
+            <span data-i18n="services_view">View services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="cybersecurity.html" class="discipline-card reveal reveal-delay-1">
+          <div class="discipline-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-i18n="services_sec_title">Cyber Security</h3>
+          <p data-i18n="services_sec_desc">Offensive testing that finds the gap before someone else does.</p>
+          <span class="discipline-card__link">
+            <span data-i18n="services_view">View services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="why_eyebrow">Why VITRA</span>
+        <h2 data-i18n="why_title">Built by people who ship, not just plan.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card__num">01</div>
+          <h3 data-i18n="why_1_title">Senior-level execution</h3>
+          <p data-i18n="why_1_desc">No junior hand-offs. The person who scopes the work is the person who builds it.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-card__num">02</div>
+          <h3 data-i18n="why_2_title">Security-first mindset</h3>
+          <p data-i18n="why_2_desc">Every line of code is written the way it would be reviewed by an attacker.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-card__num">03</div>
+          <h3 data-i18n="why_3_title">Direct communication</h3>
+          <p data-i18n="why_3_desc">No account managers, no layers. You talk to the engineer.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-card__num">04</div>
+          <h3 data-i18n="why_4_title">Documented delivery</h3>
+          <p data-i18n="why_4_desc">Every project ships with clear documentation and a clean handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills marquee -->
+  <section class="section--tight" style="padding-block: 20px 90px;">
+    <div class="container">
+      <div class="section-head reveal" style="margin-bottom: 30px;">
+        <span class="eyebrow" data-i18n="skills_eyebrow">Toolset</span>
+        <h2 style="font-size: 24px;" data-i18n="skills_title">The stack behind the work</h2>
+      </div>
+    </div>
+    <div class="skills-track-wrap">
+      <div class="skills-track" id="skills-track">
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">TypeScript</span>
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Node.js</span>
+        <span class="skill-chip">C++</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">Linux</span>
+        <span class="skill-chip">Nmap</span>
+        <span class="skill-chip">Burp Suite</span>
+        <span class="skill-chip">Docker</span>
+        <span class="skill-chip">PostgreSQL</span>
+        <span class="skill-chip">Unity</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- More services (reserved slots) -->
+  <section class="section" id="more">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="more_eyebrow">Expanding</span>
+        <h2 data-i18n="more_title">More capabilities in progress</h2>
+        <p data-i18n="more_sub">These slots are reserved for services currently in development.</p>
+      </div>
+      <div class="more-grid">
+        <a href="service.html" class="service-card service-card--empty reveal">
+          <div class="slot-arrow">^</div>
+          <h3 data-i18n="empty_1">!الخانة الأولى^</h3>
+          <p data-i18n="empty_desc">Reserved for an upcoming service.</p>
+        </a>
+        <a href="service.html" class="service-card service-card--empty reveal reveal-delay-1">
+          <div class="slot-arrow">^</div>
+          <h3 data-i18n="empty_2">!الخانة الثانية^</h3>
+          <p data-i18n="empty_desc">Reserved for an upcoming service.</p>
+        </a>
+        <a href="service.html" class="service-card service-card--empty reveal reveal-delay-2">
+          <div class="slot-arrow">^</div>
+          <h3 data-i18n="empty_3">!الخانة الثالثة^</h3>
+          <p data-i18n="empty_desc">Reserved for an upcoming service.</p>
+        </a>
+        <a href="service.html" class="service-card service-card--empty reveal reveal-delay-3">
+          <div class="slot-arrow">^</div>
+          <h3 data-i18n="empty_4">!الخانة الرابعة^</h3>
+          <p data-i18n="empty_desc">Reserved for an upcoming service.</p>
+        </a>
+        <a href="service.html" class="service-card service-card--empty reveal reveal-delay-4">
+          <div class="slot-arrow">^</div>
+          <h3 data-i18n="empty_5">!الخانة الخامسة^</h3>
+          <p data-i18n="empty_desc">Reserved for an upcoming service.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span></span>
+        <p data-i18n="footer_desc">A software and security studio building resilient products and testing them the way real attackers would.</p>
+      </div>
+      <div class="footer__nav">
+        <h4 data-i18n="footer_nav">Navigation</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="programming.html" data-i18n="nav_programming">Programming</a></li>
+          <li><a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 data-i18n="footer_contact">Contact</h4>
+        <ul>
+          <li><a href="tel:01040670952">01040670952</a></li>
+          <li><a href="mailto:sinowolf1514@gmail.com">sinowolf1514@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_rights">Copyright © VITRA. All rights reserved.</span>
+      <span class="credit-tag" style="display:inline-block;" data-i18n="credit">By: Ebrahim Hossam</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

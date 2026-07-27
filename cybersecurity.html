@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cyber Security — VITRA</title>
+<meta name="description" content="WiFi security testing, vulnerability assessment, website protection and penetration testing from VITRA." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="vitra-loader" aria-hidden="true">
+  <div class="loader-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="loader-cursor"></span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="brand" aria-label="VITRA home">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="cursor-dot"></span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="programming.html" data-i18n="nav_programming">Programming</a>
+        <a href="cybersecurity.html" class="is-active" data-i18n="nav_security">Cyber Security</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <span class="credit-tag" data-i18n="credit">By: Ebrahim Hossam</span>
+      <div class="lang-switch">
+        <button class="lang-trigger" aria-haspopup="true" aria-expanded="false">
+          <span data-current-lang>EN</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="es">Español</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="programming.html" data-i18n="nav_programming">Programming</a>
+    <a href="cybersecurity.html" class="is-active" data-i18n="nav_security">Cyber Security</a>
+    <a href="about.html" data-i18n="nav_about">About</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+  </nav>
+</header>
+<div class="menu-scrim"></div>
+
+<main>
+  <section class="page-hero">
+    <canvas id="circuit-canvas"></canvas>
+    <div class="container page-hero__inner">
+      <span class="eyebrow" data-i18n="sec_hero_eyebrow">Cyber Security</span>
+      <h1 data-i18n="sec_hero_title">Find the gap before they do.</h1>
+      <p data-i18n="sec_hero_sub">Offensive-grade testing across networks, applications and infrastructure — reported clearly, fixed properly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cards-grid">
+        <a href="service.html" class="service-card reveal">
+          <span class="service-card__index">01</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+          </div>
+          <h3 data-i18n="sec_card_wifi_title">WiFi Security Testing</h3>
+          <p data-i18n="sec_card_wifi_desc">Assessing wireless networks for weak encryption, rogue access points and exposure risks.</p>
+          <span class="service-card__go" data-i18n="services_view">View services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="service.html" class="service-card reveal reveal-delay-1">
+          <span class="service-card__index">02</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v3l2 2"/></svg>
+          </div>
+          <h3 data-i18n="sec_card_vuln_title">Vulnerability Assessment</h3>
+          <p data-i18n="sec_card_vuln_desc">Systematic scanning and analysis to identify and prioritize security weaknesses.</p>
+          <span class="service-card__go" data-i18n="services_view">View services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="service.html" class="service-card reveal reveal-delay-2">
+          <span class="service-card__index">03</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </div>
+          <h3 data-i18n="sec_card_web_title">Website Protection</h3>
+          <p data-i18n="sec_card_web_desc">Hardening web applications against common and advanced attack vectors.</p>
+          <span class="service-card__go" data-i18n="services_view">View services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="service.html" class="service-card reveal reveal-delay-3">
+          <span class="service-card__index">04</span>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          </div>
+          <h3 data-i18n="sec_card_pen_title">Penetration Testing</h3>
+          <p data-i18n="sec_card_pen_desc">Simulated real-world attacks to measure how systems hold up under pressure.</p>
+          <span class="service-card__go" data-i18n="services_view">View services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span></span>
+        <p data-i18n="footer_desc">A software and security studio building resilient products and testing them the way real attackers would.</p>
+      </div>
+      <div class="footer__nav">
+        <h4 data-i18n="footer_nav">Navigation</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="programming.html" data-i18n="nav_programming">Programming</a></li>
+          <li><a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 data-i18n="footer_contact">Contact</h4>
+        <ul>
+          <li><a href="tel:01040670952">01040670952</a></li>
+          <li><a href="mailto:sinowolf1514@gmail.com">sinowolf1514@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_rights">Copyright © VITRA. All rights reserved.</span>
+      <span class="credit-tag" style="display:inline-block;" data-i18n="credit">By: Ebrahim Hossam</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

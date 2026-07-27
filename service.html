@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Service — VITRA</title>
+<meta name="description" content="This VITRA service is not yet available to order online. Contact us directly to request it." />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="vitra-loader" aria-hidden="true">
+  <div class="loader-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="loader-cursor"></span></div>
+  <div class="loader-bar"></div>
+</div>
+
+<header class="navbar">
+  <div class="container navbar__inner">
+    <div class="navbar__left">
+      <a href="index.html" class="brand" aria-label="VITRA home">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span><span class="cursor-dot"></span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="programming.html" data-i18n="nav_programming">Programming</a>
+        <a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+    <div class="navbar__right">
+      <span class="credit-tag" data-i18n="credit">By: Ebrahim Hossam</span>
+      <div class="lang-switch">
+        <button class="lang-trigger" aria-haspopup="true" aria-expanded="false">
+          <span data-current-lang>EN</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="es">Español</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" aria-label="Mobile">
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="programming.html" data-i18n="nav_programming">Programming</a>
+    <a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a>
+    <a href="about.html" data-i18n="nav_about">About</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+  </nav>
+</header>
+<div class="menu-scrim"></div>
+
+<main>
+  <div class="locked-wrap">
+    <div class="locked-card reveal is-visible">
+      <div class="locked-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h1 data-i18n="service_locked_title">This service cannot currently be ordered through the website.</h1>
+      <p data-i18n="service_locked_sub">To request this service please contact:</p>
+      <div class="locked-contacts">
+        <a href="tel:01040670952" class="locked-contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>01040670952</span>
+        </a>
+        <a href="mailto:sinowolf1514@gmail.com" class="locked-contact-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>sinowolf1514@gmail.com</span>
+        </a>
+      </div>
+      <a href="index.html" class="btn btn-secondary btn-full locked-back" data-i18n="service_back">Back to Home</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="brand-mark"><span class="bracket">&lt;</span>VITRA<span class="bracket">/&gt;</span></span>
+        <p data-i18n="footer_desc">A software and security studio building resilient products and testing them the way real attackers would.</p>
+      </div>
+      <div class="footer__nav">
+        <h4 data-i18n="footer_nav">Navigation</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="programming.html" data-i18n="nav_programming">Programming</a></li>
+          <li><a href="cybersecurity.html" data-i18n="nav_security">Cyber Security</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 data-i18n="footer_contact">Contact</h4>
+        <ul>
+          <li><a href="tel:01040670952">01040670952</a></li>
+          <li><a href="mailto:sinowolf1514@gmail.com">sinowolf1514@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span data-i18n="footer_rights">Copyright © VITRA. All rights reserved.</span>
+      <span class="credit-tag" style="display:inline-block;" data-i18n="credit">By: Ebrahim Hossam</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
